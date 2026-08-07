@@ -1,110 +1,68 @@
-# 🌐 Free APIs for Developers & Students
+# 🌍 Free Public APIs
 
-A curated collection of **free public APIs** for developers, students, hackathons, and learning projects. All APIs listed here are free to use (or have a free tier) and can help you build applications faster.
+> A curated collection of **free public APIs** for developers, students, startups, hackathons, and open-source projects.
+>
+> Discover APIs across AI, Jobs, Weather, Finance, Education, Health, Security, Sports, Open Data, and many more categories. Every API includes its official website, description, and endpoint to help you build applications faster.
+>
+> ⭐ If this repository helps you, consider giving it a star and contributing new APIs.
 
-## 📑 Table of Contents
+## 📚 Table of Contents
 
-- [Job APIs](#job-apis)
-- [AI APIs](#ai-apis)
-- [Education APIs](#education-apis)
-- [Weather APIs](#weather-apis)
-- [Utility APIs](#utility-apis)
-- [Contributing](#contributing)
-- [License](#license)
+[`Animals`](#animals) ·
+[`Anime`](#anime) ·
+[`Anti-Malware`](#anti-malware) ·
+[`Art & Design`](#art--design) ·
+[`Books`](#books) ·
+[`Business`](#business) ·
+[`Calendar`](#calendar) ·
+[`Cloud Storage & File Sharing`](#cloud-storage--file-sharing) ·
+[`Continuous Integration`](#continuous-integration) ·
+[`Cryptocurrency`](#cryptocurrency) ·
+[`Currency Exchange`](#currency-exchange) ·
+[`Data Validation`](#data-validation) ·
+[`Development`](#development) ·
+[`Dictionaries`](#dictionaries) ·
+[`Disasters`](#disasters) ·
+[`Documents & Productivity`](#documents--productivity) ·
+[`Education`](#education) ·
+[`Environment`](#environment) ·
+[`Events`](#events) ·
+[`Finance`](#finance) ·
+[`Food & Drink`](#food--drink) ·
+[`Fraud Prevention`](#fraud-prevention) ·
+[`Games & Comics`](#games--comics) ·
+[`Geocoding`](#geocoding) ·
+[`Government`](#government) ·
+[`Health`](#health) ·
+[`Jobs`](#jobs) ·
+[`Machine Learning`](#machine-learning) ·
+[`Music`](#music) ·
+[`News`](#news) ·
+[`Open Data`](#open-data) ·
+[`Open Source Projects`](#open-source-projects) ·
+[`Patent`](#patent) ·
+[`Personality`](#personality) ·
+[`Photography`](#photography) ·
+[`Science & Math`](#science--math) ·
+[`Security`](#security) ·
+[`Shopping`](#shopping) ·
+[`Social`](#social) ·
+[`Sports & Fitness`](#sports--fitness) ·
+[`Test Data`](#test-data) ·
+[`Text Analysis`](#text-analysis) ·
+[`Tracking`](#tracking) ·
+[`Transportation`](#transportation) ·
+[`URL Shorteners`](#url-shorteners) ·
+[`Vehicle`](#vehicle) ·
+[`Video`](#video) ·
+[`Weather`](#weather)
 
 ---
 
-## 💼 Job APIs
+### API Table Format
+
+Each category contains the following information:
 
 | API Name | Description | API |
 |----------|-------------|-----|
-| [Himalayas](https://himalayas.app/api) | Remote job board and search engine | https://himalayas.app/jobs/api |
-| [Jobicy](https://jobicy.com/jobs-rss-feed) | Remote job listings API | https://jobicy.com/api/v2/remote-jobs |
-| [Adzuna](https://developer.adzuna.com/) | Job search API | https://api.adzuna.com/v1/api/jobs |
-
----
-
-## 🤖 AI APIs
-
-| API Name | Description | API |
-|----------|-------------|-----|
-| [OpenRouter](https://openrouter.ai/) | Access multiple AI models through one API | https://openrouter.ai/api/v1 |
-| [Hugging Face](https://huggingface.co/docs/api-inference/index) | AI inference API | https://api-inference.huggingface.co |
-| [Gemini API](https://ai.google.dev/) | Google's Generative AI API | https://generativelanguage.googleapis.com |
-
----
-
-## 🎓 Education APIs
-
-| API Name | Description | API |
-|----------|-------------|-----|
-| [Open Trivia DB](https://opentdb.com/) | Trivia and quiz questions | https://opentdb.com/api.php |
-| [Dictionary API](https://dictionaryapi.dev/) | Free English dictionary | https://api.dictionaryapi.dev/api/v2/entries/en |
-| [University Domains](https://github.com/Hipo/university-domains-list) | Universities worldwide | http://universities.hipolabs.com/search |
-
----
-
-## 🌤️ Weather APIs
-
-| API Name | Description | API |
-|----------|-------------|-----|
-| [Open-Meteo](https://open-meteo.com/) | Free weather forecast API | https://api.open-meteo.com/v1/forecast |
-| [WeatherAPI](https://www.weatherapi.com/) | Weather and forecast data | https://api.weatherapi.com/v1 |
-
----
-
-## 🛠️ Utility APIs
-
-| API Name | Description | API |
-|----------|-------------|-----|
-| [REST Countries](https://restcountries.com/) | Country information | https://restcountries.com/v3.1/all |
-| [JSONPlaceholder](https://jsonplaceholder.typicode.com/) | Fake REST API for testing | https://jsonplaceholder.typicode.com |
-| [ReqRes](https://reqres.in/) | Fake API for frontend testing | https://reqres.in/api |
-
----
-
-## 🚀 Example Usage
-
-### JavaScript (Fetch)
-
-```javascript
-fetch("https://himalayas.app/jobs/api")
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
-```
-
-### Python
-
-```python
-import requests
-
-response = requests.get("https://himalayas.app/jobs/api")
-print(response.json())
-```
-
-### cURL
-
-```bash
-curl https://himalayas.app/jobs/api
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork this repository.
-2. Add your API to the appropriate table.
-3. Open a Pull Request.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
-⭐ If you find this repository useful, consider giving it a **star** on GitHub!
+| API Name | Short description of the API | Base URL / Endpoint |
