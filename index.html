@@ -1,49 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REPO⭐</title>
-    <style>
-        body {
-            font-family: system-ui, sans-serif;
-            background: #0d1117;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-        }
-        .star-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 24px;
-            background: #238636;
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: background 0.2s ease;
-        }
-        .star-btn:hover {
-            background: #2ea043;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>APIs Hub — 330+ Public APIs</title>
+<meta name="description" content="A curated collection of 330+ public APIs across 48 categories for developers, students, startups, hackathons and open-source projects.">
+<style>
+:root{--bg:#070a11;--surface:#0d121c;--surface2:#111827;--line:#202a3b;--text:#f7f9fc;--muted:#9aa6b8;--accent:#8b5cf6;--accent2:#22d3a7;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{text-decoration:none;color:inherit}.container{width:min(var(--max),calc(100% - 36px));margin:auto}
+nav{height:72px;position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(255,255,255,.07);background:rgba(7,10,17,.82);backdrop-filter:blur(18px)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.logo{font-size:21px;font-weight:850;letter-spacing:-.7px}.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:28px;color:var(--muted);font-size:14px}.navlinks a:hover{color:#fff}
+.navbtns{display:flex;gap:10px}
+.github{padding:9px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);font-size:13px;font-weight:700;display:inline-flex;align-items:center;gap:6px;transition:.2s}
+.github:hover{border-color:#3b4961;background:var(--surface2)}
+.star{background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;border-color:transparent}
+.star:hover{filter:brightness(1.1)}
+.hero{padding:92px 0 72px;text-align:center;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:620px;height:420px;left:50%;top:-240px;transform:translateX(-50%);background:rgba(124,92,246,.18);filter:blur(100px);pointer-events:none}
+.eyebrow{position:relative;display:inline-flex;align-items:center;gap:8px;border:1px solid #2a3550;background:#0d1421;color:#c5ccda;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:650}.pulse{width:7px;height:7px;background:var(--accent2);border-radius:50%;box-shadow:0 0 15px var(--accent2)}
+h1{position:relative;font-size:clamp(45px,7vw,78px);line-height:1;letter-spacing:-4px;margin:24px auto 22px;max-width:900px}.grad{background:linear-gradient(90deg,#fff,#b8a7ff,#70e4ca);background-clip:text;-webkit-background-clip:text;color:transparent}
+.hero p{position:relative;color:var(--muted);font-size:17px;max-width:750px;margin:auto;line-height:1.8}.actions{position:relative;display:flex;justify-content:center;gap:12px;margin-top:30px}.btn{padding:12px 18px;border-radius:11px;font-size:14px;font-weight:750;border:1px solid var(--line)}.primary{background:#fff;color:#090b10}.secondary{background:var(--surface);color:#fff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:45px 0 0}.stat{padding:22px;border:1px solid var(--line);background:linear-gradient(145deg,#0d131f,#0a0f17);border-radius:15px}.stat strong{display:block;font-size:29px}.stat span{color:var(--muted);font-size:12px}
+section{padding:78px 0}.section-title{text-align:center;max-width:700px;margin:0 auto 36px}.section-title h2{font-size:34px;letter-spacing:-1.5px;margin:0 0 8px}.section-title p{color:var(--muted);margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}.about-card{border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:30px}.about-card h3{margin-top:0;font-size:22px}.about-card p{color:var(--muted)}.ticks{display:grid;gap:13px;margin-top:22px}.tick{display:flex;gap:10px;align-items:flex-start;color:#dce3ed}.tick b{color:var(--accent2)}
+.categories{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.cat{border:1px solid var(--line);background:var(--surface);padding:18px;border-radius:14px;transition:.2s}.cat:hover{transform:translateY(-3px);border-color:#3b4961;background:var(--surface2)}.cat .icon{font-size:23px}.cat strong{display:block;margin-top:9px;font-size:13px}.cat small{color:var(--muted);font-size:11px}
+.contact{max-width:760px;margin:auto;border:1px solid var(--line);background:linear-gradient(145deg,#0f1520,#0b1018);border-radius:20px;padding:30px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;color:#b9c3d1}.field input,.field textarea{width:100%;border:1px solid var(--line);background:#080d15;color:#fff;border-radius:10px;padding:12px 13px;font:inherit;outline:none}.field input:focus,.field textarea:focus{border-color:#6651c6}.field textarea{min-height:135px;resize:vertical}.submit{margin-top:16px;width:100%;border:0;border-radius:11px;padding:13px;background:#fff;color:#070a11;font-weight:800;cursor:pointer}.note{color:#7f8ba0;font-size:11px;text-align:center;margin:12px 0 0}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:12px}
+.footer{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap}
+.footer-links a:hover{color:#fff}
+.footer-bottom{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:11px;color:#6d7789}
+@media(max-width:900px){.categories{grid-template-columns:repeat(3,1fr)}.about{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.container{width:min(100% - 24px,var(--max))}.navlinks{display:none}.hero{padding-top:65px}h1{letter-spacing:-2.5px}.categories{grid-template-columns:1fr 1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
-  <center>
-    <h1>⭐⭐⭐⭐⭐</h1>
-    <a class="star-btn" href="https://github.com/kabishS/repo" target="_blank" rel="noopener noreferrer">
-      ⭐ Star this repo
-    </a>
-  </center>
+
+<nav>
+<div class="container nav">
+  <a class="logo" href="#home">APIs <span>Hub</span></a>
+  <div class="navlinks">
+    <a href="#about">About</a>
+    <a href="#categories">Categories</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="navbtns">
+    <a class="github star" href="https://github.com/kabishS/APIs-Hub" target="_blank" rel="noreferrer">★ Star</a>
+    <a class="github" href="https://github.com/kabishS/APIs-Hub" target="_blank" rel="noreferrer">GitHub</a>
+  </div>
+</div>
+</nav>
+
+<header class="hero" id="home">
+<div class="container">
+  <div class="eyebrow"><span class="pulse"></span> Open developer resource</div>
+  <h1>Discover APIs. <span class="grad">Build faster.</span></h1>
+  <p>A curated collection of <b>330+ public APIs</b> across <b>48 categories</b> for developers, students, startups, hackathons, and open-source projects.</p>
+  <div class="actions">
+    <a class="btn primary" href="https://github.com/kabishS/APIs-Hub" target="_blank">Explore on GitHub ↗</a>
+    <a class="btn secondary" href="#categories">Browse Categories</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>330+</strong><span>Public APIs</span></div>
+    <div class="stat"><strong>48</strong><span>Categories</span></div>
+    <div class="stat"><strong>100%</strong><span>Free to Use</span></div>
+    <div class="stat"><strong>1200+</strong><span>Developers Helped</span></div>
+  </div>
+</div>
+</header>
+
+<section id="about">
+<div class="container">
+  <div class="section-title"><h2>Everything you need, in one place.</h2><p>Find useful public APIs without spending hours searching the web.</p></div>
+  <div class="about">
+    <div class="about-card">
+      <h3>About APIs Hub</h3>
+      <p>This repository helps you quickly discover APIs for AI, Jobs, Weather, Finance, Education, Health, Security, Sports, Open Data, Transportation, and many more.</p>
+      <p>Each entry includes the API name, a short description, and its official endpoint to make integration simple and fast.</p>
+    </div>
+    <div class="about-card">
+      <h3>Built for builders</h3>
+      <p>Whether you're creating a side project, preparing for a hackathon, or learning web development, APIs Hub gives you a practical starting point.</p>
+      <div class="ticks">
+        <div class="tick"><b>✓</b> Quickly discover useful APIs</div>
+        <div class="tick"><b>✓</b> Find APIs by category</div>
+        <div class="tick"><b>✓</b> Explore official endpoints</div>
+        <div class="tick"><b>✓</b> Contribute new APIs to the community</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="categories">
+<div class="container">
+  <div class="section-title"><h2>Top API Categories</h2><p>Start with a category and find the API your project needs.</p></div>
+  <div class="categories">
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#ai--machine-learning" target="_blank"><span class="icon">🤖</span><strong>AI & Machine Learning</strong><small>AI, ML & models</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#jobs" target="_blank"><span class="icon">💼</span><strong>Jobs</strong><small>Jobs & careers</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#weather" target="_blank"><span class="icon">🌦️</span><strong>Weather</strong><small>Forecast & climate</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#finance" target="_blank"><span class="icon">💰</span><strong>Finance</strong><small>Money & markets</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#education" target="_blank"><span class="icon">🎓</span><strong>Education</strong><small>Learning resources</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#shopping" target="_blank"><span class="icon">🛒</span><strong>Shopping</strong><small>Products & stores</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#development" target="_blank"><span class="icon">🌐</span><strong>Development</strong><small>Developer tools</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#security" target="_blank"><span class="icon">🔒</span><strong>Security</strong><small>Security services</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#social" target="_blank"><span class="icon">📱</span><strong>Social</strong><small>Social platforms</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#games--comics" target="_blank"><span class="icon">🎮</span><strong>Games & Comics</strong><small>Games & entertainment</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#music" target="_blank"><span class="icon">🎵</span><strong>Music</strong><small>Music services</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#news" target="_blank"><span class="icon">📰</span><strong>News</strong><small>News & media</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#transportation" target="_blank"><span class="icon">🚗</span><strong>Transportation</strong><small>Travel & mobility</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#health" target="_blank"><span class="icon">🏥</span><strong>Health</strong><small>Health resources</small></a>
+    <a class="cat" href="https://github.com/kabishS/APIs-Hub#open-data" target="_blank"><span class="icon">📊</span><strong>Open Data</strong><small>Public datasets</small></a>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <div class="section-title"><h2>Have an API to share?</h2><p>Send a suggestion, correction, or contribution to the APIs Hub.</p></div>
+  <div class="contact">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="2aaa8990-bab1-471f-a27c-6f111c12d0f8">
+      <div class="form-grid">
+        <div class="field"><label>Name</label><input name="name" required placeholder="Your name"></div>
+        <div class="field"><label>Email</label><input name="email" type="email" required placeholder="you@example.com"></div>
+        <div class="field full"><label>Subject</label><input name="subject" required placeholder="API suggestion / correction / feedback"></div>
+        <div class="field full"><label>Message</label><textarea name="message" required placeholder="Tell us about the API or feedback..."></textarea></div>
+      </div>
+      <button class="submit" type="submit">Send Message</button>
+      <p class="note">This form submits securely via Web3Forms — no backend required.</p>
+    </form>
+  </div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+  <div class="footer">
+    <span>© 2026 APIs Hub · Open for the developer community · Licensed under MIT</span>
+    <div class="footer-links">
+      <a href="https://github.com/kabishS/APIs-Hub" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+      <a href="https://github.com/kabishS" target="_blank" rel="noreferrer">GitHub Profile ↗</a>
+      <a href="https://kabishs.github.io/kabish/" target="_blank" rel="noreferrer">Portfolio ↗</a>
+      <a href="https://www.instagram.com/itz._.kabish/" target="_blank" rel="noreferrer">Instagram ↗</a>
+    </div>
+  </div>
+  <div class="footer-bottom container" style="padding:0;">
+    <span>Made by Kabish</span>
+    <span>MIT License · Free to use and modify</span>
+  </div>
+</div>
+</footer>
+
 </body>
 </html>
