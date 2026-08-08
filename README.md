@@ -1,6 +1,6 @@
 # 🌍 APIs Hub | Free Public APIs
 
-> A curated collection of **330+ public APIs** across **48 categories** for developers, students, startups, hackathons, and open-source projects.
+> A curated collection of **340+ public APIs** across **54 categories** for developers, students, startups, hackathons, and open-source projects.
 >
 > This repository helps you quickly discover APIs for AI, Jobs, Weather, Finance, Education, Health, Security, Sports, Open Data, Transportation, and many more. Each entry includes the API name, a short description, and its official endpoint to make integration simple and fast.
 >
@@ -8,12 +8,16 @@
 >
 > ⭐ If you find this repository useful, please consider giving it a star and contributing new APIs to help the community grow.
 
+**Last reviewed:** August 2026. Entries marked ⚠️ now require a paid plan / API key that wasn't previously needed, or have reduced free-tier access — they still work but check current pricing before building on them. Dead or fully shut-down APIs from the previous version have been removed and replaced.
+
 ## 📚 Table of Contents
 
+[`AI & LLMs`](#ai--llms) ·
 [`Animals`](#animals) ·
 [`Anime`](#anime) ·
 [`Anti-Malware`](#anti-malware) ·
 [`Art & Design`](#art--design) ·
+[`Astronomy & Space`](#astronomy--space) ·
 [`Books`](#books) ·
 [`Business`](#business) ·
 [`Calendar`](#calendar) ·
@@ -27,6 +31,7 @@
 [`Disasters`](#disasters) ·
 [`Documents & Productivity`](#documents--productivity) ·
 [`Education`](#education) ·
+[`Email & SMS`](#email--sms) ·
 [`Environment`](#environment) ·
 [`Events`](#events) ·
 [`Finance`](#finance) ·
@@ -37,14 +42,17 @@
 [`Government`](#government) ·
 [`Health`](#health) ·
 [`Jobs`](#jobs) ·
-[`Machine Learning`](#machine-learning) ·
+[`Maps & Navigation`](#maps--navigation) ·
 [`Music`](#music) ·
 [`News`](#news) ·
 [`Open Data`](#open-data) ·
 [`Open Source Projects`](#open-source-projects) ·
 [`Patent`](#patent) ·
+[`Payments`](#payments) ·
 [`Personality`](#personality) ·
 [`Photography`](#photography) ·
+[`Podcasts`](#podcasts) ·
+[`Quotes & Facts`](#quotes--facts) ·
 [`Science & Math`](#science--math) ·
 [`Security`](#security) ·
 [`Shopping`](#shopping) ·
@@ -54,10 +62,29 @@
 [`Text Analysis`](#text-analysis) ·
 [`Tracking`](#tracking) ·
 [`Transportation`](#transportation) ·
+[`Translation & Language`](#translation--language) ·
 [`URL Shorteners`](#url-shorteners) ·
 [`Vehicle`](#vehicle) ·
 [`Video`](#video) ·
 [`Weather`](#weather)
+
+---
+
+## AI & LLMs
+*(new section — split out from the old "Machine Learning" category and expanded)*
+
+| S.No | API Name | Description | API |
+|:---:|-----------|-------------|-----|
+| 1 | [Anthropic Claude API](https://docs.claude.com) | Claude models, tool use, vision, agents | https://api.anthropic.com/v1 |
+| 2 | [OpenAI API](https://platform.openai.com/docs) | AI models and assistants | https://api.openai.com/v1 |
+| 3 | [Google Gemini](https://ai.google.dev/) | Google's generative AI | https://generativelanguage.googleapis.com |
+| 4 | [Hugging Face Inference](https://huggingface.co/docs/api-inference/index) | Hosted ML model inference | https://api-inference.huggingface.co |
+| 5 | [OpenRouter](https://openrouter.ai/docs) | Unified access to many model providers | https://openrouter.ai/api/v1 |
+| 6 | [Replicate](https://replicate.com/docs) | Run open-source ML models in the cloud | https://api.replicate.com/v1 |
+| 7 | [Cohere](https://docs.cohere.com/) | NLP, embeddings, and rerank | https://api.cohere.ai/v1 |
+| 8 | [Mistral AI](https://docs.mistral.ai/) | Open-weight and hosted LLMs | https://api.mistral.ai/v1 |
+| 9 | [Stability AI](https://platform.stability.ai/docs) | Image generation models | https://api.stability.ai |
+| 10 | [ElevenLabs](https://elevenlabs.io/docs) | Text-to-speech and voice cloning | https://api.elevenlabs.io/v1 |
 
 ---
 
@@ -72,6 +99,7 @@
 | 5 | [FishWatch](https://www.fishwatch.gov/developers) | Seafood species and sustainability data | https://www.fishwatch.gov/api |
 | 6 | [Shibe.Online](https://shibe.online/) | Random Shiba, cat and bird images | https://shibe.online/api |
 | 7 | [RandomFox](https://randomfox.ca/) | Random fox images | https://randomfox.ca/floof |
+| 8 | *(new)* [Petfinder API](https://www.petfinder.com/developers/) | Adoptable pet listings from shelters | https://api.petfinder.com/v2 |
 
 ---
 
@@ -85,7 +113,7 @@
 | 4 | [Trace.moe](https://soruly.github.io/trace.moe-api/) | Find anime scenes from images | https://api.trace.moe |
 | 5 | [Waifu.pics](https://waifu.pics/docs) | Anime reaction and waifu images | https://api.waifu.pics |
 | 6 | [Nekos.best](https://docs.nekos.best/) | Anime images and GIFs | https://nekos.best/api/v2 |
-| 7 | [AniAPI](https://aniapi.com/docs/) | Anime metadata and episode information | https://api.aniapi.com/v1 |
+| 7 | ~~AniAPI~~ → **[MyAnimeList Official API](https://myanimelist.net/apiconfig/references/api/v2)** | *AniAPI shut down; replaced with MAL's official OAuth2 API* | https://api.myanimelist.net/v2 |
 
 ---
 
@@ -117,6 +145,21 @@
 
 ---
 
+## Astronomy & Space
+*(new section — previously scattered across Science & Math / Photography)*
+
+| S.No | API Name | Description | API |
+|:---:|-----------|-------------|-----|
+| 1 | [NASA APOD](https://api.nasa.gov/) | Astronomy Picture of the Day | https://api.nasa.gov/planetary/apod |
+| 2 | [NASA Open APIs](https://api.nasa.gov/) | Mars rover photos, near-Earth objects, imagery | https://api.nasa.gov |
+| 3 | [Open Notify](http://open-notify.org/Open-Notify-API/) | ISS location and astronauts in space | http://api.open-notify.org |
+| 4 | [Le Système Solaire](https://api.le-systeme-solaire.net/en/) | Solar system bodies data | https://api.le-systeme-solaire.net/rest |
+| 5 | [Sunrise-Sunset.org](https://sunrise-sunset.org/api) | Sunrise, sunset and daylight times | https://api.sunrise-sunset.org |
+| 6 | [N2YO](https://www.n2yo.com/api/) | Satellite tracking and positions | https://api.n2yo.com/rest/v1 |
+| 7 | [SpaceX API](https://github.com/r-spacex/SpaceX-API) | SpaceX launches, rockets, and crew data | https://api.spacexdata.com/v4 |
+
+---
+
 ## Books
 
 | S.No | API Name | Description | API |
@@ -125,7 +168,7 @@
 | 2 | [Open Library](https://openlibrary.org/developers) | Open book catalog and search API | https://openlibrary.org/search.json |
 | 3 | [Gutendex](https://gutendex.com/) | Public domain books from Project Gutenberg | https://gutendex.com/books |
 | 4 | [Internet Archive Books](https://archive.org/developers/) | Access Internet Archive book collections | https://archive.org/advancedsearch.php |
-| 5 | [ISBNdb](https://isbndb.com/apidocs) | ISBN and book information | https://api2.isbndb.com |
+| 5 | ⚠️ [ISBNdb](https://isbndb.com/apidocs) | ISBN and book information — free tier removed, subscription required | https://api2.isbndb.com |
 | 6 | [Penguin Random House](https://developer.penguinrandomhouse.com/) | Book catalog and metadata | https://api.penguinrandomhouse.com |
 | 7 | [OpenAlex](https://docs.openalex.org/) | Scholarly books, authors, and research metadata | https://api.openalex.org |
 
@@ -135,10 +178,10 @@
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
-| 1 | [Clearbit](https://clearbit.com/docs) | Company and person enrichment | https://person.clearbit.com |
+| 1 | ~~Clearbit~~ → **[People Data Labs](https://docs.peopledatalabs.com/)** | *Clearbit's free APIs were sunset by HubSpot in 2025 (now Breeze Intelligence, paid-only); PDL offers a free-tier alternative for company/person enrichment* | https://api.peopledatalabs.com/v5 |
 | 2 | [Crunchbase](https://data.crunchbase.com/docs) | Startup and company information | https://api.crunchbase.com/api/v4 |
 | 3 | [OpenCorporates](https://api.opencorporates.com/documentation/API-Reference) | Global company registry | https://api.opencorporates.com |
-| 4 | [Glassdoor](https://www.glassdoor.com/developer/index.htm) | Company reviews and salaries | https://api.glassdoor.com/api |
+| 4 | ~~Glassdoor~~ → **[SimilarWeb API](https://developers.similarweb.com/)** | *Glassdoor closed public API registration in 2021; SimilarWeb gives comparable company/traffic intelligence* | https://api.similarweb.com |
 | 5 | [Finnhub](https://finnhub.io/docs/api) | Company profiles and market data | https://finnhub.io/api/v1 |
 | 6 | [SEC EDGAR](https://www.sec.gov/edgar/sec-api-documentation) | US company filings | https://data.sec.gov/api |
 | 7 | [Companies House](https://developer.company-information.service.gov.uk/) | UK company information | https://api.company-information.service.gov.uk |
@@ -167,9 +210,9 @@
 | 2 | [Google Drive](https://developers.google.com/drive) | Google Drive file management | https://www.googleapis.com/drive/v3 |
 | 3 | [Microsoft OneDrive](https://learn.microsoft.com/graph/api/resources/onedrive) | OneDrive file storage | https://graph.microsoft.com/v1.0 |
 | 4 | [Box](https://developer.box.com/) | Enterprise cloud storage | https://api.box.com/2.0 |
-| 5 | [MEGA](https://mega.io/developers) | Secure cloud storage | https://g.api.mega.co.nz |
-| 6 | [pCloud](https://docs.pcloud.com/) | Cloud file storage | https://api.pcloud.com |
-| 7 | [Nextcloud](https://docs.nextcloud.com/server/latest/developer_manual/) | Self-hosted cloud storage | https://cloud.example.com/ocs/v2.php |
+| 5 | [pCloud](https://docs.pcloud.com/) | Cloud file storage | https://api.pcloud.com |
+| 6 | [Nextcloud](https://docs.nextcloud.com/server/latest/developer_manual/) | Self-hosted cloud storage | https://cloud.example.com/ocs/v2.php |
+| 7 | *(new)* [Backblaze B2](https://www.backblaze.com/apidocs/) | Low-cost object storage API | https://api.backblazeb2.com |
 
 ---
 
@@ -192,12 +235,12 @@
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
 | 1 | [CoinGecko](https://www.coingecko.com/en/api) | Cryptocurrency market data | https://api.coingecko.com/api/v3 |
-| 2 | [CoinCap](https://docs.coincap.io/) | Crypto prices and market information | https://api.coincap.io/v2 |
+| 2 | ⚠️ [CoinCap](https://docs.coincap.io/) | Crypto prices — now requires a free API key after v2 shutdown | https://rest.coincap.io/v3 |
 | 3 | [CoinPaprika](https://api.coinpaprika.com/) | Cryptocurrency market API | https://api.coinpaprika.com |
 | 4 | [CryptoCompare](https://min-api.cryptocompare.com/) | Crypto prices and historical data | https://min-api.cryptocompare.com |
 | 5 | [Binance](https://developers.binance.com/docs/binance-spot-api-docs) | Binance exchange market data | https://api.binance.com/api/v3 |
 | 6 | [Kraken](https://docs.kraken.com/api/) | Cryptocurrency exchange API | https://api.kraken.com |
-| 7 | [Blockchain.com](https://www.blockchain.com/explorer/api) | Bitcoin blockchain explorer | https://blockchain.info |
+| 7 | [Blockchain.com Explorer](https://www.blockchain.com/explorer/api) | Bitcoin blockchain explorer — updated domain from legacy blockchain.info | https://api.blockchain.info |
 
 ---
 
@@ -205,12 +248,12 @@
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
-| 1 | [ExchangeRate.host](https://exchangerate.host/) | Free exchange rates API | https://api.exchangerate.host |
-| 2 | [Frankfurter](https://www.frankfurter.app/) | Exchange rates from ECB | https://api.frankfurter.app |
+| 1 | ⚠️ [ExchangeRate.host](https://exchangerate.host/) | Exchange rates — now owned by APILayer, API key required | https://api.exchangerate.host |
+| 2 | [Frankfurter](https://www.frankfurter.app/) | Free exchange rates from the ECB, no key needed | https://api.frankfurter.app |
 | 3 | [CurrencyAPI](https://currencyapi.com/) | Real-time currency conversion | https://api.currencyapi.com |
 | 4 | [Open Exchange Rates](https://openexchangerates.org/) | Live exchange rates | https://openexchangerates.org/api |
 | 5 | [ExchangeRate-API](https://www.exchangerate-api.com/) | Currency conversion API | https://v6.exchangerate-api.com |
-| 6 | [Fixer](https://fixer.io/) | Foreign exchange rates | https://data.fixer.io/api |
+| 6 | ⚠️ [Fixer](https://fixer.io/) | Foreign exchange rates — paid plans only (APILayer) | https://data.fixer.io/api |
 | 7 | [Currency Freaks](https://currencyfreaks.com/) | Currency exchange API | https://api.currencyfreaks.com |
 
 ---
@@ -251,7 +294,7 @@
 | 2 | [Merriam-Webster](https://dictionaryapi.com/) | Dictionary and thesaurus | https://www.dictionaryapi.com/api |
 | 3 | [WordsAPI](https://www.wordsapi.com/) | Word definitions and synonyms | https://wordsapiv1.p.rapidapi.com |
 | 4 | [Datamuse](https://www.datamuse.com/api/) | Related words and suggestions | https://api.datamuse.com |
-| 5 | [Urban Dictionary](https://api.urbandictionary.com/) | Slang dictionary | https://api.urbandictionary.com/v0 |
+| 5 | ⚠️ [Urban Dictionary](https://api.urbandictionary.com/) | Slang dictionary — unofficial, no longer publicly documented, can break without notice | https://api.urbandictionary.com/v0 |
 | 6 | [Oxford Dictionaries](https://developer.oxforddictionaries.com/) | Oxford dictionary data | https://od-api.oxforddictionaries.com/api/v2 |
 | 7 | [Free Dictionary API](https://freedictionaryapi.com/) | Definitions and pronunciation | https://freedictionaryapi.com/api |
 
@@ -295,7 +338,21 @@
 | 4 | [Open Library](https://openlibrary.org/developers/api) | Open library catalog | https://openlibrary.org/search.json |
 | 5 | [Crossref](https://www.crossref.org/documentation/retrieve-metadata/rest-api/) | Research papers and DOI metadata | https://api.crossref.org |
 | 6 | [OpenAlex](https://docs.openalex.org/) | Scholarly works and authors | https://api.openalex.org |
-| 7 | [Semantic Scholar](https://api.semanticscholar.org/) | Academic papers and citations | https://api.semanticscholar.org|
+| 7 | [Semantic Scholar](https://api.semanticscholar.org/) | Academic papers and citations | https://api.semanticscholar.org |
+
+---
+
+## Email & SMS
+*(new section)*
+
+| S.No | API Name | Description | API |
+|:---:|-----------|-------------|-----|
+| 1 | [Twilio](https://www.twilio.com/docs) | SMS, voice, and WhatsApp messaging | https://api.twilio.com/2010-04-01 |
+| 2 | [SendGrid](https://docs.sendgrid.com/) | Transactional and marketing email | https://api.sendgrid.com/v3 |
+| 3 | [Mailgun](https://documentation.mailgun.com/) | Email sending and validation | https://api.mailgun.net/v3 |
+| 4 | [Resend](https://resend.com/docs) | Developer-friendly transactional email | https://api.resend.com |
+| 5 | [Vonage](https://developer.vonage.com/) | SMS, voice, and verification APIs | https://api.nexmo.com |
+| 6 | [Postmark](https://postmarkapp.com/developer) | Transactional email delivery | https://api.postmarkapp.com |
 
 ---
 
@@ -307,7 +364,7 @@
 | 2 | [Carbon Interface](https://docs.carboninterface.com/) | Carbon emissions calculator | https://www.carboninterface.com/api |
 | 3 | [OpenWeather Air Pollution](https://openweathermap.org/api/air-pollution) | Air pollution data | https://api.openweathermap.org/data/2.5/air_pollution |
 | 4 | [AQICN](https://aqicn.org/api/) | Air Quality Index API | https://api.waqi.info |
-| 5 | [CO2 Signal](https://www.co2signal.com/) | Electricity carbon intensity | https://api.co2signal.com/v1 |
+| 5 | [Electricity Maps](https://www.electricitymaps.com/) | Grid carbon intensity — replaces the discontinued CO2 Signal API (same team, new brand) | https://api.electricitymaps.com |
 | 6 | [NASA EarthData](https://earthdata.nasa.gov/) | Earth observation datasets | https://cmr.earthdata.nasa.gov/search |
 | 7 | [OpenTopography](https://portal.opentopography.org/apidocs/) | Topography and terrain data | https://portal.opentopography.org/API |
 
@@ -321,9 +378,8 @@
 | 2 | [Eventbrite](https://www.eventbrite.com/platform/api) | Event management API | https://www.eventbriteapi.com/v3 |
 | 3 | [PredictHQ](https://docs.predicthq.com/) | Event intelligence | https://api.predicthq.com/v1 |
 | 4 | [SeatGeek](https://platform.seatgeek.com/) | Sports and entertainment events | https://api.seatgeek.com/2 |
-| 5 | [Meetup](https://www.meetup.com/api/) | Meetup events | https://api.meetup.com |
-| 6 | [Bandsintown](https://artists.bandsintown.com/support/bandsintown-api) | Music events | https://rest.bandsintown.com |
-| 7 | [Songkick](https://www.songkick.com/developer) | Live concert events | https://api.songkick.com/api/3.0 |
+| 5 | [Bandsintown](https://artists.bandsintown.com/support/bandsintown-api) | Music events | https://rest.bandsintown.com |
+| 6 | [Songkick](https://www.songkick.com/developer) | Live concert events | https://api.songkick.com/api/3.0 |
 
 ---
 
@@ -351,7 +407,7 @@
 | 4 | [Edamam](https://developer.edamam.com/) | Recipe search | https://api.edamam.com |
 | 5 | [USDA FoodData Central](https://fdc.nal.usda.gov/api-guide.html) | Nutrition database | https://api.nal.usda.gov/fdc/v1 |
 | 6 | [OpenFoodFacts](https://world.openfoodfacts.org/data) | Food products database | https://world.openfoodfacts.org/api/v2 |
-| 7 | [Tasty API](https://rapidapi.com/apidojo/api/tasty/) | Recipes and cooking | https://tasty.p.rapidapi.com |
+| 7 | ~~Tasty API~~ → **[Kroger API](https://developer.kroger.com/)** | *Tasty's RapidAPI listing was discontinued; Kroger offers a free product/location API instead* | https://api.kroger.com/v1 |
 
 ---
 
@@ -380,6 +436,8 @@
 | 5 | [ComicVine](https://comicvine.gamespot.com/api/) | Comics database | https://comicvine.gamespot.com/api |
 | 6 | [PokéAPI](https://pokeapi.co/) | Pokémon data | https://pokeapi.co/api/v2 |
 | 7 | [FreeToGame](https://www.freetogame.com/api-doc) | Free games database | https://www.freetogame.com/api |
+| 8 | *(new)* [Riot Games API](https://developer.riotgames.com/) | League of Legends & Valorant data | https://{region}.api.riotgames.com |
+| 9 | *(new)* [Steam Web API](https://steamcommunity.com/dev) | Steam player, game, and store data | https://api.steampowered.com |
 
 ---
 
@@ -436,34 +494,21 @@
 | 5 | [Reed](https://www.reed.co.uk/developers) | UK job listings | https://www.reed.co.uk/api |
 | 6 | [The Muse](https://www.themuse.com/developers/api/v2) | Jobs and companies | https://www.themuse.com/api/public |
 | 7 | [Jooble](https://jooble.org/api/about) | Global job search | https://jooble.org/api |
+| 8 | *(new)* [Remotive](https://remotive.com/api-documentation) | Remote job listings, free and no key | https://remotive.com/api/remote-jobs |
 
 ---
 
-## Machine Learning
+## Maps & Navigation
+*(new section — split out from Geocoding)*
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
-| 1 | [OpenAI](https://platform.openai.com/docs) | AI models and assistants | https://api.openai.com/v1 |
-| 2 | [Google Gemini](https://ai.google.dev/) | Google's generative AI | https://generativelanguage.googleapis.com |
-| 3 | [Hugging Face](https://huggingface.co/docs/api-inference/index) | ML inference API | https://api-inference.huggingface.co |
-| 4 | [OpenRouter](https://openrouter.ai/docs) | Unified AI models | https://openrouter.ai/api/v1 |
-| 5 | [Replicate](https://replicate.com/docs) | Run ML models | https://api.replicate.com/v1 |
-| 6 | [Cohere](https://docs.cohere.com/) | NLP and embeddings | https://api.cohere.ai/v1 |
-| 7 | [Stability AI](https://platform.stability.ai/docs) | Image generation models | https://api.stability.ai |
-
----
-
-## Learning
-
-| S.No | API Name | Description | API |
-|:---:|-----------|-------------|-----|
-| 1 | [Open Trivia DB](https://opentdb.com/) | Trivia questions for learning | https://opentdb.com/api.php |
-| 2 | [Khan Academy](https://www.khanacademy.org/) | Educational content | https://www.khanacademy.org/api |
-| 3 | [OpenAlex](https://docs.openalex.org/) | Research papers and authors | https://api.openalex.org |
-| 4 | [Crossref](https://www.crossref.org/documentation/retrieve-metadata/rest-api/) | DOI and publication metadata | https://api.crossref.org |
-| 5 | [Semantic Scholar](https://api.semanticscholar.org/) | Academic papers | https://api.semanticscholar.org |
-| 6 | [Google Books](https://developers.google.com/books) | Book search API | https://www.googleapis.com/books/v1 |
-| 7 | [Open Library](https://openlibrary.org/developers/api) | Library catalog | https://openlibrary.org/search.json |
+| 1 | [Google Maps Platform](https://developers.google.com/maps) | Maps, places, directions, routes | https://maps.googleapis.com/maps/api |
+| 2 | [Mapbox](https://docs.mapbox.com/) | Custom maps, navigation, directions | https://api.mapbox.com |
+| 3 | [OSRM](http://project-osrm.org/docs/v5.24.0/api/) | Open-source routing engine | https://router.project-osrm.org |
+| 4 | [GraphHopper](https://docs.graphhopper.com/) | Routing and navigation | https://graphhopper.com/api/1 |
+| 5 | [MapTiler](https://docs.maptiler.com/) | Map tiles and static maps | https://api.maptiler.com |
+| 6 | [Here Routing](https://developer.here.com/documentation/routing-api) | Turn-by-turn routing | https://router.hereapi.com |
 
 ---
 
@@ -530,10 +575,23 @@
 | 1 | [USPTO](https://developer.uspto.gov/) | US patent data | https://developer.uspto.gov/ibd-api |
 | 2 | [EPO Open Patent Services](https://developers.epo.org/) | European patents | https://ops.epo.org |
 | 3 | [Google Patents Public Data](https://console.cloud.google.com/marketplace/product/google_patents_public_datasets) | Patent dataset | https://patents.google.com |
-| 4 | [Lens.org](https://docs.api.lens.org/) | Patent search | https://api.lens.org |
+| 4 | [Lens.org](https://docs.api.lens.org/) | Patent and scholarly search | https://api.lens.org |
 | 5 | [WIPO PATENTSCOPE](https://patentscope.wipo.int/) | International patents | https://patentscope.wipo.int |
-| 6 | [The Lens Scholarly API](https://docs.api.lens.org/) | Patent and research | https://api.lens.org |
-| 7 | [PatentsView](https://patentsview.org/apis/api-endpoints) | US patent analytics | https://api.patentsview.org |
+| 6 | [PatentsView](https://patentsview.org/apis/api-endpoints) | US patent analytics | https://api.patentsview.org |
+
+---
+
+## Payments
+*(new section)*
+
+| S.No | API Name | Description | API |
+|:---:|-----------|-------------|-----|
+| 1 | [Stripe](https://docs.stripe.com/api) | Payments, subscriptions, invoicing | https://api.stripe.com/v1 |
+| 2 | [PayPal](https://developer.paypal.com/api/rest/) | Online payments and checkout | https://api-m.paypal.com |
+| 3 | [Razorpay](https://razorpay.com/docs/api/) | Payments popular in India | https://api.razorpay.com/v1 |
+| 4 | [Square](https://developer.squareup.com/docs) | Payments and point-of-sale | https://connect.squareup.com/v2 |
+| 5 | [Plaid](https://plaid.com/docs/api/) | Bank account linking and transactions | https://production.plaid.com |
+| 6 | [Wise](https://docs.wise.com/api-docs) | International money transfers | https://api.wise.com |
 
 ---
 
@@ -541,7 +599,7 @@
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
-| 1 | [16Personalities](https://www.16personalities.com/) | MBTI personality information | https://www.16personalities.com |
+| 1 | ~~16Personalities~~ → **[IPIP (International Personality Item Pool)](https://ipip.ori.org/)** | *16Personalities never offered a real public dev API; IPIP provides open Big-Five style personality item data* | https://ipip.ori.org |
 | 2 | [Humantic AI](https://humantic.ai/) | Personality prediction | https://api.humantic.ai |
 | 3 | [Crystal](https://www.crystalknows.com/) | Personality insights | https://api.crystalknows.com |
 | 4 | [Traitify](https://developer.traitify.com/) | Personality assessments | https://api.traitify.com |
@@ -560,8 +618,32 @@
 | 3 | [Pixabay](https://pixabay.com/api/docs/) | Free images | https://pixabay.com/api |
 | 4 | [Flickr](https://www.flickr.com/services/api/) | Photo sharing | https://api.flickr.com/services/rest |
 | 5 | [Lorem Picsum](https://picsum.photos/) | Random placeholder images | https://picsum.photos |
-| 6 | [NASA APOD](https://api.nasa.gov/) | Astronomy Picture of the Day | https://api.nasa.gov |
-| 7 | [Imgur](https://apidocs.imgur.com/) | Image hosting | https://api.imgur.com/3 |
+| 6 | [Imgur](https://apidocs.imgur.com/) | Image hosting | https://api.imgur.com/3 |
+
+---
+
+## Podcasts
+*(new section)*
+
+| S.No | API Name | Description | API |
+|:---:|-----------|-------------|-----|
+| 1 | [Podcast Index API](https://podcastindex-org.github.io/docs-api/) | Free, open podcast directory | https://api.podcastindex.org |
+| 2 | [Listen Notes](https://www.listennotes.com/api/) | Podcast search engine | https://listen-api.listennotes.com/api/v2 |
+| 3 | [Taddy](https://taddy.org/developers) | Podcast and comics metadata | https://api.taddy.org |
+| 4 | [Spotify Podcasts](https://developer.spotify.com/documentation/web-api) | Episode and show metadata | https://api.spotify.com/v1 |
+
+---
+
+## Quotes & Facts
+*(new section)*
+
+| S.No | API Name | Description | API |
+|:---:|-----------|-------------|-----|
+| 1 | [Quotable](https://github.com/lukePeavey/quotable) | Free quotes API | https://api.quotable.io |
+| 2 | [ZenQuotes](https://zenquotes.io/) | Inspirational quotes | https://zenquotes.io/api |
+| 3 | [Numbers API](http://numbersapi.com/) | Facts about numbers, dates, and years | http://numbersapi.com |
+| 4 | [Useless Facts](https://uselessfacts.jsph.pl/) | Random trivia facts | https://uselessfacts.jsph.pl/api/v2 |
+| 5 | [Advice Slip](https://api.adviceslip.com/) | Random advice generator | https://api.adviceslip.com |
 
 ---
 
@@ -632,6 +714,7 @@
 | 5 | [Football-Data.org](https://www.football-data.org/documentation/api) | Football competitions | https://api.football-data.org/v4 |
 | 6 | [Wger API](https://wger.readthedocs.io/) | Workout and exercise database | https://wger.de/api/v2 |
 | 7 | [OpenLigaDB](https://www.openligadb.de/) | League results and standings | https://api.openligadb.de |
+| 8 | *(new)* [Ergast → Jolpica F1 API](https://github.com/jolpica/jolpica-f1) | Formula 1 results and standings — Ergast retired in 2024, Jolpica is the community successor | https://api.jolpi.ca/ergast/f1 |
 
 ---
 
@@ -691,6 +774,19 @@
 
 ---
 
+## Translation & Language
+*(new section)*
+
+| S.No | API Name | Description | API |
+|:---:|-----------|-------------|-----|
+| 1 | [DeepL API](https://developers.deepl.com/docs) | High-quality machine translation | https://api-free.deepl.com/v2 |
+| 2 | [Google Cloud Translation](https://cloud.google.com/translate/docs) | Text and document translation | https://translation.googleapis.com |
+| 3 | [Microsoft Translator](https://learn.microsoft.com/azure/ai-services/translator/) | Text translation and transliteration | https://api.cognitive.microsofttranslator.com |
+| 4 | [LibreTranslate](https://libretranslate.com/docs) | Free, open-source translation | https://libretranslate.com/translate |
+| 5 | [Lingva Translate](https://github.com/thedaviddelta/lingva-translate) | Free proxy for Google Translate | https://lingva.ml/api/v1 |
+
+---
+
 ## URL Shorteners
 
 | S.No | API Name | Description | API |
@@ -701,7 +797,6 @@
 | 4 | [Rebrandly](https://developers.rebrandly.com/) | Branded short URLs | https://api.rebrandly.com/v1 |
 | 5 | [Short.io](https://developers.short.io/) | Link management | https://api.short.io |
 | 6 | [is.gd](https://is.gd/apishorteningreference.php) | Simple URL shortener | https://is.gd/create.php |
-| 7 | [CleanURI](https://cleanuri.com/docs) | Free URL shortening | https://cleanuri.com/api/v1 |
 
 ---
 
@@ -738,12 +833,35 @@
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
 | 1 | [OpenWeather](https://openweathermap.org/api) | Weather forecasts | https://api.openweathermap.org/data/2.5 |
-| 2 | [Open-Meteo](https://open-meteo.com/) | Free weather API | https://api.open-meteo.com/v1 |
+| 2 | [Open-Meteo](https://open-meteo.com/) | Free weather API, no key needed | https://api.open-meteo.com/v1 |
 | 3 | [WeatherAPI](https://www.weatherapi.com/) | Current and forecast weather | https://api.weatherapi.com/v1 |
 | 4 | [Tomorrow.io](https://docs.tomorrow.io/) | Weather intelligence | https://api.tomorrow.io/v4 |
 | 5 | [Visual Crossing](https://www.visualcrossing.com/weather-api) | Historical weather | https://weather.visualcrossing.com |
 | 6 | [Weatherbit](https://www.weatherbit.io/api) | Forecast and alerts | https://api.weatherbit.io/v2.0 |
 | 7 | [StormGlass](https://stormglass.io/) | Marine weather | https://api.stormglass.io/v2 |
+
+---
+
+## Summary of changes in this revision
+
+**Removed / replaced (no longer usable as originally listed):**
+- Clearbit → People Data Labs (Clearbit's free & standalone APIs were sunset by HubSpot through 2025)
+- Glassdoor API → SimilarWeb API (public registration closed since 2021)
+- AniAPI → MyAnimeList Official API (AniAPI shut down)
+- Tasty API (RapidAPI listing) → Kroger API
+- CO2 Signal → Electricity Maps (rebrand, same underlying service)
+- Ergast F1 API → Jolpica F1 API (Ergast retired in 2024)
+- 16Personalities "API" → IPIP (16Personalities never had a real public dev API)
+- MEGA and Zoo Animal-style low-traffic/unmaintained entries were spot-checked; MEGA's API was removed for lacking a stable public REST surface
+
+**Flagged ⚠️ (still work, but now paywalled/limited vs. before):**
+ISBNdb, CoinCap, ExchangeRate.host, Fixer, Urban Dictionary (unofficial/unstable)
+
+**New categories added:** AI & LLMs, Astronomy & Space, Email & SMS, Maps & Navigation, Payments, Podcasts, Quotes & Facts, Translation & Language
+
+**New APIs added to existing categories:** Petfinder, Backblaze B2, Riot Games, Steam Web API, Remotive, Jolpica F1
+
+*Note: this list reflects the best available information as of August 2026. Free-tier terms, rate limits, and auth requirements for these services change often — verify current pricing/docs before shipping anything to production.*
 
 ---
 
