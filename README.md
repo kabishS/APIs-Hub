@@ -495,6 +495,7 @@
 | 6 | [The Muse](https://www.themuse.com/developers/api/v2) | Jobs and companies | https://www.themuse.com/api/public |
 | 7 | [Jooble](https://jooble.org/api/about) | Global job search | https://jooble.org/api |
 | 8 | *(new)* [Remotive](https://remotive.com/api-documentation) | Remote job listings, free and no key | https://remotive.com/api/remote-jobs |
+| 9 | [Jobvetta](https://www.jobvetta.com/api) | Live, vetted India jobs from official sources | https://api.jobvetta.com/v1/jobs |
 
 ---
 
