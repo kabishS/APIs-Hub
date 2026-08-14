@@ -1,4 +1,4 @@
-# 🌍 APIs Hub | Free Public APIs.
+# 🌍 APIs Hub | Free Public APIs..
 
 > A curated collection of **340+ public APIs** across **54 categories** for developers, students, startups, hackathons, and open-source projects.
 >
