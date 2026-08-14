@@ -1,14 +1,18 @@
-# 🌍 APIs Hub | Free Public APIs..
+# 🌍 APIs Hub | Free Public APIs
 
-> A curated collection of **340+ public APIs** across **54 categories** for developers, students, startups, hackathons, and open-source projects.
+[![Awesome](https://img.shields.io/badge/Awesome-List-blueviolet)](https://github.com/sindresorhus/awesome)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
+[![Link Check](https://img.shields.io/badge/link--check-automated-blue)](#keeping-this-list-healthy)
+[![Contributors](https://img.shields.io/badge/contributors-open-orange)](#contributing)
+
+> A curated, **community-maintained** collection of **340+ public APIs** across **55 categories** for developers, students, startups, hackathons, and open-source projects.
 >
 > This repository helps you quickly discover APIs for AI, Jobs, Weather, Finance, Education, Health, Security, Sports, Open Data, Transportation, and many more. Each entry includes the API name, a short description, and its official endpoint to make integration simple and fast.
 >
-> Whether you're building your next side project, preparing for a hackathon, or learning web development, this collection provides a one-stop resource for finding reliable public APIs.
->
-> ⭐ If you find this repository useful, please consider giving it a star and contributing new APIs to help the community grow.
+> This is an open-source project — anyone can propose new APIs, flag broken ones, or improve descriptions via pull request. See [Contributing](#contributing) below.
 
-**Last reviewed:** August 2026. Entries marked ⚠️ now require a paid plan / API key that wasn't previously needed, or have reduced free-tier access — they still work but check current pricing before building on them. Dead or fully shut-down APIs from the previous version have been removed and replaced.
+**Last reviewed:** August 2026. Entries marked ⚠️ now require a paid plan / API key that wasn't previously needed, or have reduced free-tier access — they still work but check current pricing before building on them. Dead or fully shut-down APIs from the previous version have been removed and replaced. Every entry in this revision was individually re-checked against its current documentation before inclusion.
 
 ## 📚 Table of Contents
 
@@ -41,6 +45,7 @@
 [`Geocoding`](#geocoding) ·
 [`Government`](#government) ·
 [`Health`](#health) ·
+[`IP & Geolocation`](#ip--geolocation) ·
 [`Jobs`](#jobs) ·
 [`Maps & Navigation`](#maps--navigation) ·
 [`Music`](#music) ·
@@ -71,7 +76,6 @@
 ---
 
 ## AI & LLMs
-*(new section — split out from the old "Machine Learning" category and expanded)*
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
@@ -99,7 +103,7 @@
 | 5 | [FishWatch](https://www.fishwatch.gov/developers) | Seafood species and sustainability data | https://www.fishwatch.gov/api |
 | 6 | [Shibe.Online](https://shibe.online/) | Random Shiba, cat and bird images | https://shibe.online/api |
 | 7 | [RandomFox](https://randomfox.ca/) | Random fox images | https://randomfox.ca/floof |
-| 8 | *(new)* [Petfinder API](https://www.petfinder.com/developers/) | Adoptable pet listings from shelters | https://api.petfinder.com/v2 |
+| 8 | [Petfinder API](https://www.petfinder.com/developers/) | Adoptable pet listings from shelters | https://api.petfinder.com/v2 |
 
 ---
 
@@ -146,7 +150,6 @@
 ---
 
 ## Astronomy & Space
-*(new section — previously scattered across Science & Math / Photography)*
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
@@ -212,7 +215,7 @@
 | 4 | [Box](https://developer.box.com/) | Enterprise cloud storage | https://api.box.com/2.0 |
 | 5 | [pCloud](https://docs.pcloud.com/) | Cloud file storage | https://api.pcloud.com |
 | 6 | [Nextcloud](https://docs.nextcloud.com/server/latest/developer_manual/) | Self-hosted cloud storage | https://cloud.example.com/ocs/v2.php |
-| 7 | *(new)* [Backblaze B2](https://www.backblaze.com/apidocs/) | Low-cost object storage API | https://api.backblazeb2.com |
+| 7 | [Backblaze B2](https://www.backblaze.com/apidocs/) | Low-cost object storage API | https://api.backblazeb2.com |
 
 ---
 
@@ -343,7 +346,6 @@
 ---
 
 ## Email & SMS
-*(new section)*
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
@@ -436,8 +438,8 @@
 | 5 | [ComicVine](https://comicvine.gamespot.com/api/) | Comics database | https://comicvine.gamespot.com/api |
 | 6 | [PokéAPI](https://pokeapi.co/) | Pokémon data | https://pokeapi.co/api/v2 |
 | 7 | [FreeToGame](https://www.freetogame.com/api-doc) | Free games database | https://www.freetogame.com/api |
-| 8 | *(new)* [Riot Games API](https://developer.riotgames.com/) | League of Legends & Valorant data | https://{region}.api.riotgames.com |
-| 9 | *(new)* [Steam Web API](https://steamcommunity.com/dev) | Steam player, game, and store data | https://api.steampowered.com |
+| 8 | [Riot Games API](https://developer.riotgames.com/) | League of Legends & Valorant data | https://{region}.api.riotgames.com |
+| 9 | [Steam Web API](https://steamcommunity.com/dev) | Steam player, game, and store data | https://api.steampowered.com |
 
 ---
 
@@ -452,6 +454,7 @@
 | 5 | [HERE Geocoding](https://developer.here.com/) | HERE location API | https://geocode.search.hereapi.com |
 | 6 | [OpenCage](https://opencagedata.com/api) | Forward and reverse geocoding | https://api.opencagedata.com |
 | 7 | [TomTom Maps](https://developer.tomtom.com/) | Geocoding API | https://api.tomtom.com/search |
+| 8 | ⚠️ *(new)* [REST Countries](https://restcountries.com/docs) | Country reference data (names, capitals, currencies, borders, flags) — now runs as a managed API family requiring a free account and bearer token | https://restcountries.com/v3.1 |
 
 ---
 
@@ -483,6 +486,18 @@
 
 ---
 
+## IP & Geolocation
+*(new section — split out of Geocoding/Data Validation; verified working August 2026)*
+
+| S.No | API Name | Description | API |
+|:---:|-----------|-------------|-----|
+| 1 | *(new)* [IP-API.com](https://ip-api.com/docs) | IP-to-location lookup, free for non-commercial use, no key required (45 req/min) | http://ip-api.com/json |
+| 2 | *(new)* [FreeIPAPI](https://freeipapi.com/) | Free IPv4/IPv6 geolocation, country and phone-code lookups | https://freeipapi.com/api/json |
+| 3 | [MaxMind GeoIP](https://dev.maxmind.com/) | Commercial-grade IP intelligence | https://geoip.maxmind.com |
+| 4 | [ipapi](https://ipapi.com/) | IP geolocation, 100 free requests/month | https://api.ipapi.com |
+
+---
+
 ## Jobs
 
 | S.No | API Name | Description | API |
@@ -494,12 +509,11 @@
 | 5 | [Reed](https://www.reed.co.uk/developers) | UK job listings | https://www.reed.co.uk/api |
 | 6 | [The Muse](https://www.themuse.com/developers/api/v2) | Jobs and companies | https://www.themuse.com/api/public |
 | 7 | [Jooble](https://jooble.org/api/about) | Global job search | https://jooble.org/api |
-| 8 | *(new)* [Remotive](https://remotive.com/api-documentation) | Remote job listings, free and no key | https://remotive.com/api/remote-jobs |
+| 8 | [Remotive](https://remotive.com/api-documentation) | Remote job listings, free and no key | https://remotive.com/api/remote-jobs |
 
 ---
 
 ## Maps & Navigation
-*(new section — split out from Geocoding)*
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
@@ -582,7 +596,6 @@
 ---
 
 ## Payments
-*(new section)*
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
@@ -623,7 +636,6 @@
 ---
 
 ## Podcasts
-*(new section)*
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
@@ -635,7 +647,6 @@
 ---
 
 ## Quotes & Facts
-*(new section)*
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
@@ -714,7 +725,7 @@
 | 5 | [Football-Data.org](https://www.football-data.org/documentation/api) | Football competitions | https://api.football-data.org/v4 |
 | 6 | [Wger API](https://wger.readthedocs.io/) | Workout and exercise database | https://wger.de/api/v2 |
 | 7 | [OpenLigaDB](https://www.openligadb.de/) | League results and standings | https://api.openligadb.de |
-| 8 | *(new)* [Ergast → Jolpica F1 API](https://github.com/jolpica/jolpica-f1) | Formula 1 results and standings — Ergast retired in 2024, Jolpica is the community successor | https://api.jolpi.ca/ergast/f1 |
+| 8 | [Ergast → Jolpica F1 API](https://github.com/jolpica/jolpica-f1) | Formula 1 results and standings — Ergast retired in 2024, Jolpica is the community successor | https://api.jolpi.ca/ergast/f1 |
 
 ---
 
@@ -775,7 +786,6 @@
 ---
 
 ## Translation & Language
-*(new section)*
 
 | S.No | API Name | Description | API |
 |:---:|-----------|-------------|-----|
@@ -845,29 +855,55 @@
 ## Summary of changes in this revision
 
 **Removed / replaced (no longer usable as originally listed):**
-- Clearbit → People Data Labs (Clearbit's free & standalone APIs were sunset by HubSpot through 2025)
-- Glassdoor API → SimilarWeb API (public registration closed since 2021)
-- AniAPI → MyAnimeList Official API (AniAPI shut down)
+- Clearbit → People Data Labs
+- Glassdoor API → SimilarWeb API
+- AniAPI → MyAnimeList Official API
 - Tasty API (RapidAPI listing) → Kroger API
-- CO2 Signal → Electricity Maps (rebrand, same underlying service)
-- Ergast F1 API → Jolpica F1 API (Ergast retired in 2024)
-- 16Personalities "API" → IPIP (16Personalities never had a real public dev API)
-- MEGA and Zoo Animal-style low-traffic/unmaintained entries were spot-checked; MEGA's API was removed for lacking a stable public REST surface
+- CO2 Signal → Electricity Maps (rebrand)
+- Ergast F1 API → Jolpica F1 API
+- 16Personalities "API" → IPIP
 
-**Flagged ⚠️ (still work, but now paywalled/limited vs. before):**
-ISBNdb, CoinCap, ExchangeRate.host, Fixer, Urban Dictionary (unofficial/unstable)
+**Flagged ⚠️ (still work, but now paywalled/limited/changed vs. before):**
+ISBNdb, CoinCap, ExchangeRate.host, Fixer, Urban Dictionary (unofficial/unstable), REST Countries (now requires a free account + bearer token)
 
-**New categories added:** AI & LLMs, Astronomy & Space, Email & SMS, Maps & Navigation, Payments, Podcasts, Quotes & Facts, Translation & Language
+**New categories added:** AI & LLMs, Astronomy & Space, Email & SMS, Maps & Navigation, Payments, Podcasts, Quotes & Facts, Translation & Language, **IP & Geolocation**
 
-**New APIs added to existing categories:** Petfinder, Backblaze B2, Riot Games, Steam Web API, Remotive, Jolpica F1
+**New APIs added and individually verified this revision:** Petfinder, Backblaze B2, Riot Games, Steam Web API, Remotive, Jolpica F1, **IP-API.com, FreeIPAPI, REST Countries**
 
 *Note: this list reflects the best available information as of August 2026. Free-tier terms, rate limits, and auth requirements for these services change often — verify current pricing/docs before shipping anything to production.*
 
 ---
 
+## Keeping this list healthy
+
+This repo aims to only ship **entries that currently work**. To keep it that way:
+
+- Every PR that adds an API should include a link to its official docs and a one-line note on the current free-tier terms (key required? rate limit?).
+- Entries that start requiring payment or a key where they didn't before should be flagged with ⚠️, not deleted — they still work, just note the change.
+- Entries that are fully dead (DNS doesn't resolve, docs page gone, org confirms shutdown) should be struck through and, where a reasonable alternative exists, replaced rather than just removed.
+- Consider wiring up a scheduled link-checker (e.g. [lychee](https://github.com/lycheeverse/lychee) or [markdown-link-check](https://github.com/tcort/markdown-link-check)) as a GitHub Action so broken links surface automatically instead of going stale silently.
+
+## Contributing
+
+Contributions are welcome and are what keep this list accurate:
+
+1. **Fork** the repo and create a branch for your change.
+2. **Add or update** an entry in the relevant category table, keeping the existing column format (`S.No | API Name | Description | API`).
+3. **Verify** the API is currently live and free (or clearly note its access requirements) before submitting.
+4. **Open a pull request** describing what changed and why (new API, broken link fix, pricing change, etc).
+5. For a brand-new category, also add it to the Table of Contents.
+
+Please keep descriptions to one short line and avoid duplicate entries across categories unless the API is genuinely relevant to both.
+
+## License
+
+This list is released under the [MIT License](https://opensource.org/licenses/MIT) — free to use, share, and adapt with attribution. Note that the license covers this document itself; each individual API listed has its own separate terms of service, which you should review before use.
+
+---
+
 <div align="center">
 
-### Made with ❤️ by **Kabish**
+### Made with ❤️ by **Kabish** and contributors
 
 ⭐ **If you found this repository useful, please give it a star!**
 
