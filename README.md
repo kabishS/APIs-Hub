@@ -1,61 +1,18 @@
-# Public APIs Reference
+# 🌍 APIs Hub | Free Public APIs
 
-A curated, categorized list of free and public APIs — adapted from the community-maintained [public-apis/public-apis](https://github.com/public-apis/public-apis) repository, with links pulled directly from the source so every entry points to real documentation.
+> A curated collection of **340+ public APIs** across **54 categories** for developers, students, startups, hackathons, and open-source projects.
+>
+> This repository helps you quickly discover APIs for AI, Jobs, Weather, Finance, Education, Health, Security, Sports, Open Data, Transportation, and many more. Each entry includes the API name, a short description, and its official endpoint to make integration simple and fast.
+>
+> Whether you're building your next side project, preparing for a hackathon, or learning web development, this collection provides a one-stop resource for finding reliable public APIs.
+>
+> ⭐ If you find this repository useful, please consider giving it a star and contributing new APIs to help the community grow.
+
+**Last reviewed:** August 2026. Entries marked ⚠️ now require a paid plan / API key that wasn't previously needed, or have reduced free-tier access — they still work but check current pricing before building on them. Always re-verify endpoints before shipping to production, as free APIs can change terms with little notice.
 
 ## Index
 
-- [Animals](#animals)
-- [Anime](#anime)
-- [Anti-Malware](#anti-malware)
-- [Art & Design](#art-design)
-- [Authentication & Authorization](#authentication-authorization)
-- [Blockchain](#blockchain)
-- [Books](#books)
-- [Business](#business)
-- [Calendar](#calendar)
-- [Cloud Storage & File Sharing](#cloud-storage-file-sharing)
-- [Continuous Integration](#continuous-integration)
-- [Cryptocurrency](#cryptocurrency)
-- [Currency Exchange](#currency-exchange)
-- [Data Validation](#data-validation)
-- [Development](#development)
-- [Dictionaries](#dictionaries)
-- [Documents & Productivity](#documents-productivity)
-- [Email](#email)
-- [Entertainment](#entertainment)
-- [Environment](#environment)
-- [Events](#events)
-- [Finance](#finance)
-- [Food & Drink](#food-drink)
-- [Games & Comics](#games-comics)
-- [Geocoding](#geocoding)
-- [Government](#government)
-- [Health](#health)
-- [Jobs](#jobs)
-- [Machine Learning](#machine-learning)
-- [Music](#music)
-- [News](#news)
-- [Open Data](#open-data)
-- [Open Source Projects](#open-source-projects)
-- [Patent](#patent)
-- [Personality](#personality)
-- [Phone](#phone)
-- [Photography](#photography)
-- [Programming](#programming)
-- [Science & Math](#science-math)
-- [Security](#security)
-- [Shopping](#shopping)
-- [Social](#social)
-- [Sports & Fitness](#sports-fitness)
-- [Test Data](#test-data)
-- [Text Analysis](#text-analysis)
-- [Tracking](#tracking)
-- [Transportation](#transportation)
-- [URL Shorteners](#url-shorteners)
-- [Vehicle](#vehicle)
-- [Video](#video)
-- [Weather](#weather)
-- [Example Usage](#example-usage)
+[Animals](#animals) | [Anime](#anime) | [Anti-Malware](#anti-malware) | [Art & Design](#art-design) | [Authentication & Authorization](#authentication-authorization) | [Blockchain](#blockchain) | [Books](#books) | [Business](#business) | [Calendar](#calendar) | [Cloud Storage & File Sharing](#cloud-storage-file-sharing) | [Continuous Integration](#continuous-integration) | [Cryptocurrency](#cryptocurrency) | [Currency Exchange](#currency-exchange) | [Data Validation](#data-validation) | [Development](#development) | [Dictionaries](#dictionaries) | [Documents & Productivity](#documents-productivity) | [Email](#email) | [Entertainment](#entertainment) | [Environment](#environment) | [Events](#events) | [Finance](#finance) | [Food & Drink](#food-drink) | [Games & Comics](#games-comics) | [Geocoding](#geocoding) | [Government](#government) | [Health](#health) | [Jobs](#jobs) | [Machine Learning](#machine-learning) | [Music](#music) | [News](#news) | [Open Data](#open-data) | [Open Source Projects](#open-source-projects) | [Patent](#patent) | [Personality](#personality) | [Phone](#phone) | [Photography](#photography) | [Programming](#programming) | [Science & Math](#science-math) | [Security](#security) | [Shopping](#shopping) | [Social](#social) | [Sports & Fitness](#sports-fitness) | [Test Data](#test-data) | [Text Analysis](#text-analysis) | [Tracking](#tracking) | [Transportation](#transportation) | [URL Shorteners](#url-shorteners) | [Vehicle](#vehicle) | [Video](#video) | [Weather](#weather) | [Example Usage](#example-usage)
 
 ## Animals
 
