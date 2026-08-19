@@ -1,6 +1,6 @@
 # 🌍 APIs Hub | Free Public APIs
 
-> A curated collection of **340+ public APIs** across **54 categories** for developers, students, startups, hackathons, and open-source projects.
+> A curated collection of **350+ public APIs** across **54 categories** for developers, students, startups, hackathons, and open-source projects.
 >
 > This repository helps you quickly discover APIs for AI, Jobs, Weather, Finance, Education, Health, Security, Sports, Open Data, Transportation, and many more. Each entry includes the API name, a short description, and its official endpoint to make integration simple and fast.
 >
